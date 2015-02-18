@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>F14649F0-5B12-4ECD-B5A6-15AFBFA12777</string>
+	<key>IDESourceControlProjectName</key>
+	<string>FTPresentDemoProject</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>3744EC772AEA36CED2C927288B90EFDC921B84B9</key>
+		<string>https://github.com/ftoniz/Present-my-skills.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>FTPresentDemoProject.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>3744EC772AEA36CED2C927288B90EFDC921B84B9</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/ftoniz/Present-my-skills.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>3744EC772AEA36CED2C927288B90EFDC921B84B9</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>3744EC772AEA36CED2C927288B90EFDC921B84B9</string>
+			<key>IDESourceControlWCCName</key>
+			<string>PresentMySkills</string>
+		</dict>
+	</array>
+</dict>
+</plist>
