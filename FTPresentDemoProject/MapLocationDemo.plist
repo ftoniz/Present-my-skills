@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Name</key>
+		<string>United Center Silom</string>
+		<key>Description</key>
+		<string>United Center Co.,Ltd., 323 Silom Road, Silom, Bangrak</string>
+		<key>URL</key>
+		<string>http://www.ucbuilding.com</string>
+		<key>URL Name</key>
+		<string>United Center</string>
+		<key>Location</key>
+		<dict>
+			<key>Latitude</key>
+			<real>13.723507045166</real>
+			<key>Longitude</key>
+			<real>100.52006431743</real>
+		</dict>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Mont Nomsod</string>
+		<key>Description</key>
+		<string>160/1-3 Dinsor Road, Sao Chingcha, Phra Nakorn</string>
+		<key>URL</key>
+		<string>http://www.mont-nomsod.com</string>
+		<key>URL Name</key>
+		<string>Mont Nomsod</string>
+		<key>Location</key>
+		<dict>
+			<key>Latitude</key>
+			<real>13.75573</real>
+			<key>Longitude</key>
+			<real>100.49831</real>
+		</dict>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Siam Paragon</string>
+		<key>Description</key>
+		<string>991 RAMA 1 ROAD, PATHUMWAN, BANGKOK 10330, THAILAND</string>
+		<key>URL</key>
+		<string>http://www.siamparagon.co.th</string>
+		<key>URL Name</key>
+		<string>Siam Paragon</string>
+		<key>Location</key>
+		<dict>
+			<key>Latitude</key>
+			<real>13.73955</real>
+			<key>Longitude</key>
+			<real>100.53394</real>
+		</dict>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Dusit Zoo</string>
+		<key>Description</key>
+		<string>71 Rama V Rd. Dusit Bangkok 10300</string>
+		<key>URL</key>
+		<string>http://www.dusitzoo.org</string>
+		<key>URL Name</key>
+		<string>Dusit Zoo</string>
+		<key>Location</key>
+		<dict>
+			<key>Latitude</key>
+			<real>13.7725</real>
+			<key>Longitude</key>
+			<real>100.51638888889</real>
+		</dict>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Paolo Memorial Hospital Phaholyothin</string>
+		<key>Description</key>
+		<string>670/1,Phaholyothin Road, Samsen-nai, Phayathin, Bangkok 10400</string>
+		<key>URL</key>
+		<string>http://www.paolohealthcare.com/bettermore</string>
+		<key>URL Name</key>
+		<string>Paolo Memorial Hospital </string>
+		<key>Location</key>
+		<dict>
+			<key>Latitude</key>
+			<real>13.792166949635</real>
+			<key>Longitude</key>
+			<real>100.54974087597</real>
+		</dict>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Central Plaza Ladphrao</string>
+		<key>Description</key>
+		<string>1691 Phahonyothin Rd., Ladyao, Chatuchak 10900</string>
+		<key>URL</key>
+		<string>http://www.centralplaza.co.th</string>
+		<key>URL Name</key>
+		<string>Central Plaza</string>
+		<key>Location</key>
+		<dict>
+			<key>Latitude</key>
+			<real>13.847455</real>
+			<key>Longitude</key>
+			<real>100.58006</real>
+		</dict>
+	</dict>
+</array>
+</plist>

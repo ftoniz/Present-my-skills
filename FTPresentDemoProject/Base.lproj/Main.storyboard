@@ -5,6 +5,40 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
+        <!--Web View Controller-->
+        <scene sceneID="m90-t8-Ph7">
+            <objects>
+                <viewController storyboardIdentifier="WebViewController" automaticallyAdjustsScrollViewInsets="NO" id="lav-WE-JAm" customClass="WebViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pR5-4V-tWC"/>
+                        <viewControllerLayoutGuide type="bottom" id="V8q-MX-e5j"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OXU-23-Vh8">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oJn-4t-aAz">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="oJn-4t-aAz" firstAttribute="leading" secondItem="OXU-23-Vh8" secondAttribute="leading" id="7lE-5t-bFZ"/>
+                            <constraint firstAttribute="trailing" secondItem="oJn-4t-aAz" secondAttribute="trailing" id="YjG-91-v8q"/>
+                            <constraint firstItem="oJn-4t-aAz" firstAttribute="top" secondItem="pR5-4V-tWC" secondAttribute="bottom" id="ggC-T5-WSp"/>
+                            <constraint firstItem="V8q-MX-e5j" firstAttribute="top" secondItem="oJn-4t-aAz" secondAttribute="bottom" id="od6-ei-sXX"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="webView" destination="oJn-4t-aAz" id="aor-ZT-m6D"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9SL-Sf-f3V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1314" y="-963"/>
+        </scene>
         <!--Map View Controller-->
         <scene sceneID="elK-T7-nff">
             <objects>
@@ -17,21 +51,74 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="h64-Xl-9F5">
-                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" pitchEnabled="NO" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h64-Xl-9F5">
+                                <rect key="frame" x="0.0" y="64" width="600" height="476"/>
                             </mapView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ckg-Tz-Ipq">
+                                <rect key="frame" x="0.0" y="540" width="600" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r9H-am-zqa">
+                                        <rect key="frame" x="8" y="10" width="134" height="40"/>
+                                        <state key="normal" image="RedPin.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y5M-t8-OM2">
+                                        <rect key="frame" x="308" y="10" width="134" height="40"/>
+                                        <state key="normal" image="BrownPin.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3SE-mR-6en">
+                                        <rect key="frame" x="458" y="10" width="134" height="40"/>
+                                        <state key="normal" image="PinkPin.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tDd-2P-ppk">
+                                        <rect key="frame" x="158" y="10" width="134" height="40"/>
+                                        <state key="normal" image="YellowPin.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.93227099869999996" green="0.93227099869999996" blue="0.93227099869999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="y5M-t8-OM2" firstAttribute="width" secondItem="tDd-2P-ppk" secondAttribute="width" id="0xe-Ng-EH6"/>
+                                    <constraint firstAttribute="height" constant="60" id="6KF-KW-UfF"/>
+                                    <constraint firstItem="3SE-mR-6en" firstAttribute="centerY" secondItem="y5M-t8-OM2" secondAttribute="centerY" id="8Ut-zL-hdz"/>
+                                    <constraint firstItem="y5M-t8-OM2" firstAttribute="centerY" secondItem="tDd-2P-ppk" secondAttribute="centerY" id="AE8-nW-5HR"/>
+                                    <constraint firstItem="3SE-mR-6en" firstAttribute="width" secondItem="y5M-t8-OM2" secondAttribute="width" id="G9d-K1-Tu6"/>
+                                    <constraint firstItem="y5M-t8-OM2" firstAttribute="leading" secondItem="tDd-2P-ppk" secondAttribute="trailing" constant="16" id="HxL-62-fsU"/>
+                                    <constraint firstItem="3SE-mR-6en" firstAttribute="leading" secondItem="y5M-t8-OM2" secondAttribute="trailing" constant="16" id="Ppi-fE-OHB"/>
+                                    <constraint firstItem="tDd-2P-ppk" firstAttribute="leading" secondItem="r9H-am-zqa" secondAttribute="trailing" constant="16" id="WCb-pG-CnD"/>
+                                    <constraint firstItem="r9H-am-zqa" firstAttribute="width" secondItem="tDd-2P-ppk" secondAttribute="width" id="X5e-PT-wzg"/>
+                                    <constraint firstAttribute="centerY" secondItem="r9H-am-zqa" secondAttribute="centerY" id="fRa-5y-Q1S"/>
+                                    <constraint firstItem="r9H-am-zqa" firstAttribute="centerY" secondItem="tDd-2P-ppk" secondAttribute="centerY" id="gQE-ju-oJD"/>
+                                    <constraint firstItem="r9H-am-zqa" firstAttribute="leading" secondItem="Ckg-Tz-Ipq" secondAttribute="leading" constant="8" id="i8m-2u-lC7"/>
+                                    <constraint firstAttribute="centerY" secondItem="3SE-mR-6en" secondAttribute="centerY" id="mCB-ve-rDA"/>
+                                    <constraint firstAttribute="trailing" secondItem="3SE-mR-6en" secondAttribute="trailing" constant="8" id="yuK-5s-4sW"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Ckg-Tz-Ipq" secondAttribute="trailing" id="7rz-u2-hox"/>
+                            <constraint firstItem="Ckg-Tz-Ipq" firstAttribute="leading" secondItem="lZJ-7y-kIZ" secondAttribute="leading" id="HXZ-eG-xjt"/>
                             <constraint firstItem="h64-Xl-9F5" firstAttribute="leading" secondItem="lZJ-7y-kIZ" secondAttribute="leading" id="R0S-v2-4zC"/>
-                            <constraint firstItem="v00-W1-9vp" firstAttribute="top" secondItem="h64-Xl-9F5" secondAttribute="bottom" id="RoK-Gp-g87"/>
                             <constraint firstItem="h64-Xl-9F5" firstAttribute="top" secondItem="Kqq-Yr-Yw8" secondAttribute="bottom" id="dJG-8y-I9o"/>
+                            <constraint firstItem="v00-W1-9vp" firstAttribute="top" secondItem="Ckg-Tz-Ipq" secondAttribute="bottom" id="mj4-D6-Rct"/>
+                            <constraint firstItem="Ckg-Tz-Ipq" firstAttribute="top" secondItem="h64-Xl-9F5" secondAttribute="bottom" id="sU5-jE-KPz"/>
                             <constraint firstAttribute="trailing" secondItem="h64-Xl-9F5" secondAttribute="trailing" id="zG8-9M-Y9d"/>
                         </constraints>
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
+                        <outlet property="brownButton" destination="y5M-t8-OM2" id="evC-JN-H9i"/>
                         <outlet property="mapView" destination="h64-Xl-9F5" id="PkI-bs-8ZM"/>
+                        <outlet property="pinkButton" destination="3SE-mR-6en" id="ay8-pZ-3Yu"/>
+                        <outlet property="redButton" destination="r9H-am-zqa" id="hqI-8b-Hzp"/>
+                        <outlet property="yellowButton" destination="tDd-2P-ppk" id="47S-e4-jW2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zUo-Nk-gyw" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -244,4 +331,10 @@
             <point key="canvasLocation" x="600" y="1094"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="BrownPin.png" width="25" height="40"/>
+        <image name="PinkPin.png" width="25" height="40"/>
+        <image name="RedPin.png" width="25" height="40"/>
+        <image name="YellowPin.png" width="25" height="40"/>
+    </resources>
 </document>

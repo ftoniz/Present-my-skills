@@ -11,5 +11,9 @@
 @interface MapViewController : UIViewController <MKMapViewDelegate>
 @property (nonatomic) IBOutlet MKMapView *mapView;
 
+@property (nonatomic) IBOutlet UIButton *redButton;
+@property (nonatomic) IBOutlet UIButton *brownButton;
+@property (nonatomic) IBOutlet UIButton *yellowButton;
+@property (nonatomic) IBOutlet UIButton *pinkButton;
 
 @end

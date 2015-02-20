@@ -15,6 +15,16 @@
 		7204CB281A9362BE001CC274 /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7204CB271A9362BE001CC274 /* CameraViewController.m */; };
 		7204CB2C1A9362F1001CC274 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7204CB2B1A9362F1001CC274 /* MapViewController.m */; };
 		7204CB2E1A936333001CC274 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7204CB2D1A936333001CC274 /* MapKit.framework */; };
+		7204CB301A94783F001CC274 /* MapLocationDemo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7204CB2F1A94783F001CC274 /* MapLocationDemo.plist */; };
+		7204CB331A948BDF001CC274 /* CustomMapPin.m in Sources */ = {isa = PBXBuildFile; fileRef = 7204CB321A948BDF001CC274 /* CustomMapPin.m */; };
+		7204CB351A948D97001CC274 /* BrownPin.png in Resources */ = {isa = PBXBuildFile; fileRef = 7204CB341A948D97001CC274 /* BrownPin.png */; };
+		7204CB371A948DA0001CC274 /* RedPin.png in Resources */ = {isa = PBXBuildFile; fileRef = 7204CB361A948DA0001CC274 /* RedPin.png */; };
+		7204CB391A9587CE001CC274 /* YellowPin.png in Resources */ = {isa = PBXBuildFile; fileRef = 7204CB381A9587CE001CC274 /* YellowPin.png */; };
+		7204CB3B1A9587D7001CC274 /* PinkPin.png in Resources */ = {isa = PBXBuildFile; fileRef = 7204CB3A1A9587D7001CC274 /* PinkPin.png */; };
+		7204CB3E1A95B03C001CC274 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7204CB3D1A95B03C001CC274 /* WebViewController.m */; };
+		7204CB421A95B3BC001CC274 /* Cross@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7204CB3F1A95B3BC001CC274 /* Cross@2x.png */; };
+		7204CB431A95B3BC001CC274 /* Cross.png in Resources */ = {isa = PBXBuildFile; fileRef = 7204CB401A95B3BC001CC274 /* Cross.png */; };
+		7204CB441A95B3BC001CC274 /* Cross@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7204CB411A95B3BC001CC274 /* Cross@3x.png */; };
 		72457E971A8D9F2800D128DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 72457E961A8D9F2800D128DA /* main.m */; };
 		72457E9A1A8D9F2800D128DA /* FTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 72457E991A8D9F2800D128DA /* FTAppDelegate.m */; };
 		72457E9D1A8D9F2800D128DA /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72457E9C1A8D9F2800D128DA /* RootViewController.m */; };
@@ -56,6 +66,18 @@
 		7204CB2A1A9362F1001CC274 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		7204CB2B1A9362F1001CC274 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		7204CB2D1A936333001CC274 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		7204CB2F1A94783F001CC274 /* MapLocationDemo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MapLocationDemo.plist; sourceTree = "<group>"; };
+		7204CB311A948BDF001CC274 /* CustomMapPin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomMapPin.h; sourceTree = "<group>"; };
+		7204CB321A948BDF001CC274 /* CustomMapPin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomMapPin.m; sourceTree = "<group>"; };
+		7204CB341A948D97001CC274 /* BrownPin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BrownPin.png; sourceTree = "<group>"; };
+		7204CB361A948DA0001CC274 /* RedPin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RedPin.png; sourceTree = "<group>"; };
+		7204CB381A9587CE001CC274 /* YellowPin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = YellowPin.png; sourceTree = "<group>"; };
+		7204CB3A1A9587D7001CC274 /* PinkPin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PinkPin.png; sourceTree = "<group>"; };
+		7204CB3C1A95B03C001CC274 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		7204CB3D1A95B03C001CC274 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		7204CB3F1A95B3BC001CC274 /* Cross@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Cross@2x.png"; sourceTree = "<group>"; };
+		7204CB401A95B3BC001CC274 /* Cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cross.png; sourceTree = "<group>"; };
+		7204CB411A95B3BC001CC274 /* Cross@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Cross@3x.png"; sourceTree = "<group>"; };
 		72457E911A8D9F2800D128DA /* FTPresentDemoProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FTPresentDemoProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72457E951A8D9F2800D128DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72457E961A8D9F2800D128DA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -127,6 +149,9 @@
 			children = (
 				7204CB2A1A9362F1001CC274 /* MapViewController.h */,
 				7204CB2B1A9362F1001CC274 /* MapViewController.m */,
+				7204CB2F1A94783F001CC274 /* MapLocationDemo.plist */,
+				7204CB311A948BDF001CC274 /* CustomMapPin.h */,
+				7204CB321A948BDF001CC274 /* CustomMapPin.m */,
 			);
 			name = MapKit;
 			sourceTree = "<group>";
@@ -157,6 +182,8 @@
 				72457E991A8D9F2800D128DA /* FTAppDelegate.m */,
 				72457E9B1A8D9F2800D128DA /* RootViewController.h */,
 				72457E9C1A8D9F2800D128DA /* RootViewController.m */,
+				7204CB3C1A95B03C001CC274 /* WebViewController.h */,
+				7204CB3D1A95B03C001CC274 /* WebViewController.m */,
 				72457ED11A90926B00D128DA /* Slide Image */,
 				72457ED51A91B83400D128DA /* Resizeable Cell */,
 				7204CB181A932198001CC274 /* Table Animation Cell */,
@@ -200,6 +227,13 @@
 		72457ED01A908D1200D128DA /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				7204CB3F1A95B3BC001CC274 /* Cross@2x.png */,
+				7204CB401A95B3BC001CC274 /* Cross.png */,
+				7204CB411A95B3BC001CC274 /* Cross@3x.png */,
+				7204CB3A1A9587D7001CC274 /* PinkPin.png */,
+				7204CB381A9587CE001CC274 /* YellowPin.png */,
+				7204CB361A948DA0001CC274 /* RedPin.png */,
+				7204CB341A948D97001CC274 /* BrownPin.png */,
 				7204CB201A932303001CC274 /* Refresh@3x.png */,
 				7204CB1C1A9322B8001CC274 /* Refresh@2x.png */,
 				7204CB1D1A9322B8001CC274 /* Refresh.png */,
@@ -319,10 +353,15 @@
 			files = (
 				72457ECE1A908D0B00D128DA /* Image1.jpg in Resources */,
 				72457EA01A8D9F2800D128DA /* Main.storyboard in Resources */,
+				7204CB431A95B3BC001CC274 /* Cross.png in Resources */,
 				7204CB1E1A9322B8001CC274 /* Refresh@2x.png in Resources */,
+				7204CB441A95B3BC001CC274 /* Cross@3x.png in Resources */,
+				7204CB351A948D97001CC274 /* BrownPin.png in Resources */,
 				72457ECF1A908D0B00D128DA /* Image2.jpg in Resources */,
 				72457EE31A91C0B800D128DA /* minus.png in Resources */,
 				72457EE41A91C0B800D128DA /* add.png in Resources */,
+				7204CB3B1A9587D7001CC274 /* PinkPin.png in Resources */,
+				7204CB391A9587CE001CC274 /* YellowPin.png in Resources */,
 				72457EA51A8D9F2800D128DA /* LaunchScreen.xib in Resources */,
 				7204CB171A92E8F0001CC274 /* Sailboat.png in Resources */,
 				7204CB211A932303001CC274 /* Refresh@3x.png in Resources */,
@@ -330,6 +369,9 @@
 				7204CB1F1A9322B8001CC274 /* Refresh.png in Resources */,
 				72457EA21A8D9F2800D128DA /* Images.xcassets in Resources */,
 				72457ECD1A908D0B00D128DA /* Image3.jpg in Resources */,
+				7204CB301A94783F001CC274 /* MapLocationDemo.plist in Resources */,
+				7204CB371A948DA0001CC274 /* RedPin.png in Resources */,
+				7204CB421A95B3BC001CC274 /* Cross@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,8 +393,10 @@
 				72457ED41A90927C00D128DA /* SlideImageViewController.m in Sources */,
 				72457E9D1A8D9F2800D128DA /* RootViewController.m in Sources */,
 				72457EDF1A91B8B800D128DA /* ResizeableTableCell.m in Sources */,
+				7204CB331A948BDF001CC274 /* CustomMapPin.m in Sources */,
 				72457E9A1A8D9F2800D128DA /* FTAppDelegate.m in Sources */,
 				72457E971A8D9F2800D128DA /* main.m in Sources */,
+				7204CB3E1A95B03C001CC274 /* WebViewController.m in Sources */,
 				7204CB281A9362BE001CC274 /* CameraViewController.m in Sources */,
 				7204CB2C1A9362F1001CC274 /* MapViewController.m in Sources */,
 				72457ED81A91B84D00D128DA /* ResizeableViewController.m in Sources */,
