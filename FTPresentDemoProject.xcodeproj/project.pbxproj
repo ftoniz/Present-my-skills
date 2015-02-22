@@ -42,6 +42,18 @@
 		72457EE01A91B8B800D128DA /* ResizeableTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72457EDE1A91B8B800D128DA /* ResizeableTableCell.xib */; };
 		72457EE31A91C0B800D128DA /* minus.png in Resources */ = {isa = PBXBuildFile; fileRef = 72457EE11A91C0B800D128DA /* minus.png */; };
 		72457EE41A91C0B800D128DA /* add.png in Resources */ = {isa = PBXBuildFile; fileRef = 72457EE21A91C0B800D128DA /* add.png */; };
+		72F5DA421A99EC68003FF156 /* ExpandingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72F5DA411A99EC68003FF156 /* ExpandingTableViewController.m */; };
+		72F5DA451A99EF23003FF156 /* ETTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 72F5DA441A99EF23003FF156 /* ETTableView.m */; };
+		72F5DA4E1A99EF89003FF156 /* ETOuterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 72F5DA4C1A99EF89003FF156 /* ETOuterCell.m */; };
+		72F5DA4F1A99EF89003FF156 /* ETOuterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72F5DA4D1A99EF89003FF156 /* ETOuterCell.xib */; };
+		72F5DA561A99F092003FF156 /* Up.png in Resources */ = {isa = PBXBuildFile; fileRef = 72F5DA501A99F092003FF156 /* Up.png */; };
+		72F5DA571A99F092003FF156 /* Up@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 72F5DA511A99F092003FF156 /* Up@3x.png */; };
+		72F5DA581A99F092003FF156 /* Up@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 72F5DA521A99F092003FF156 /* Up@2x.png */; };
+		72F5DA591A99F092003FF156 /* Down.png in Resources */ = {isa = PBXBuildFile; fileRef = 72F5DA531A99F092003FF156 /* Down.png */; };
+		72F5DA5A1A99F092003FF156 /* Down@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 72F5DA541A99F092003FF156 /* Down@2x.png */; };
+		72F5DA5B1A99F092003FF156 /* Down@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 72F5DA551A99F092003FF156 /* Down@3x.png */; };
+		72F5DA5F1A99F154003FF156 /* ETInnerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 72F5DA5D1A99F154003FF156 /* ETInnerCell.m */; };
+		72F5DA601A99F154003FF156 /* ETInnerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72F5DA5E1A99F154003FF156 /* ETInnerCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +117,22 @@
 		72457EDE1A91B8B800D128DA /* ResizeableTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ResizeableTableCell.xib; sourceTree = "<group>"; };
 		72457EE11A91C0B800D128DA /* minus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = minus.png; sourceTree = "<group>"; };
 		72457EE21A91C0B800D128DA /* add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add.png; sourceTree = "<group>"; };
+		72F5DA401A99EC68003FF156 /* ExpandingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpandingTableViewController.h; sourceTree = "<group>"; };
+		72F5DA411A99EC68003FF156 /* ExpandingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpandingTableViewController.m; sourceTree = "<group>"; };
+		72F5DA431A99EF23003FF156 /* ETTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETTableView.h; sourceTree = "<group>"; };
+		72F5DA441A99EF23003FF156 /* ETTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETTableView.m; sourceTree = "<group>"; };
+		72F5DA4B1A99EF89003FF156 /* ETOuterCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETOuterCell.h; sourceTree = "<group>"; };
+		72F5DA4C1A99EF89003FF156 /* ETOuterCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETOuterCell.m; sourceTree = "<group>"; };
+		72F5DA4D1A99EF89003FF156 /* ETOuterCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ETOuterCell.xib; sourceTree = "<group>"; };
+		72F5DA501A99F092003FF156 /* Up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Up.png; sourceTree = "<group>"; };
+		72F5DA511A99F092003FF156 /* Up@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Up@3x.png"; sourceTree = "<group>"; };
+		72F5DA521A99F092003FF156 /* Up@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Up@2x.png"; sourceTree = "<group>"; };
+		72F5DA531A99F092003FF156 /* Down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Down.png; sourceTree = "<group>"; };
+		72F5DA541A99F092003FF156 /* Down@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Down@2x.png"; sourceTree = "<group>"; };
+		72F5DA551A99F092003FF156 /* Down@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Down@3x.png"; sourceTree = "<group>"; };
+		72F5DA5C1A99F154003FF156 /* ETInnerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETInnerCell.h; sourceTree = "<group>"; };
+		72F5DA5D1A99F154003FF156 /* ETInnerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETInnerCell.m; sourceTree = "<group>"; };
+		72F5DA5E1A99F154003FF156 /* ETInnerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ETInnerCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +216,7 @@
 				72457ED51A91B83400D128DA /* Resizeable Cell */,
 				7204CB181A932198001CC274 /* Table Animation Cell */,
 				7204CB291A9362DE001CC274 /* MapKit */,
+				72F5DA3F1A99EC3F003FF156 /* Expanding Table */,
 				7204CB251A936265001CC274 /* Photo n Video */,
 				72457E9E1A8D9F2800D128DA /* Main.storyboard */,
 				72457EA11A8D9F2800D128DA /* Images.xcassets */,
@@ -227,8 +256,14 @@
 		72457ED01A908D1200D128DA /* Image */ = {
 			isa = PBXGroup;
 			children = (
-				7204CB3F1A95B3BC001CC274 /* Cross@2x.png */,
+				72F5DA501A99F092003FF156 /* Up.png */,
+				72F5DA521A99F092003FF156 /* Up@2x.png */,
+				72F5DA511A99F092003FF156 /* Up@3x.png */,
+				72F5DA531A99F092003FF156 /* Down.png */,
+				72F5DA541A99F092003FF156 /* Down@2x.png */,
+				72F5DA551A99F092003FF156 /* Down@3x.png */,
 				7204CB401A95B3BC001CC274 /* Cross.png */,
+				7204CB3F1A95B3BC001CC274 /* Cross@2x.png */,
 				7204CB411A95B3BC001CC274 /* Cross@3x.png */,
 				7204CB3A1A9587D7001CC274 /* PinkPin.png */,
 				7204CB381A9587CE001CC274 /* YellowPin.png */,
@@ -268,6 +303,23 @@
 				72457EDE1A91B8B800D128DA /* ResizeableTableCell.xib */,
 			);
 			name = "Resizeable Cell";
+			sourceTree = "<group>";
+		};
+		72F5DA3F1A99EC3F003FF156 /* Expanding Table */ = {
+			isa = PBXGroup;
+			children = (
+				72F5DA401A99EC68003FF156 /* ExpandingTableViewController.h */,
+				72F5DA411A99EC68003FF156 /* ExpandingTableViewController.m */,
+				72F5DA431A99EF23003FF156 /* ETTableView.h */,
+				72F5DA441A99EF23003FF156 /* ETTableView.m */,
+				72F5DA4B1A99EF89003FF156 /* ETOuterCell.h */,
+				72F5DA4C1A99EF89003FF156 /* ETOuterCell.m */,
+				72F5DA4D1A99EF89003FF156 /* ETOuterCell.xib */,
+				72F5DA5C1A99F154003FF156 /* ETInnerCell.h */,
+				72F5DA5D1A99F154003FF156 /* ETInnerCell.m */,
+				72F5DA5E1A99F154003FF156 /* ETInnerCell.xib */,
+			);
+			name = "Expanding Table";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -351,16 +403,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72F5DA581A99F092003FF156 /* Up@2x.png in Resources */,
 				72457ECE1A908D0B00D128DA /* Image1.jpg in Resources */,
 				72457EA01A8D9F2800D128DA /* Main.storyboard in Resources */,
 				7204CB431A95B3BC001CC274 /* Cross.png in Resources */,
 				7204CB1E1A9322B8001CC274 /* Refresh@2x.png in Resources */,
+				72F5DA571A99F092003FF156 /* Up@3x.png in Resources */,
+				72F5DA4F1A99EF89003FF156 /* ETOuterCell.xib in Resources */,
 				7204CB441A95B3BC001CC274 /* Cross@3x.png in Resources */,
 				7204CB351A948D97001CC274 /* BrownPin.png in Resources */,
+				72F5DA5B1A99F092003FF156 /* Down@3x.png in Resources */,
 				72457ECF1A908D0B00D128DA /* Image2.jpg in Resources */,
+				72F5DA561A99F092003FF156 /* Up.png in Resources */,
 				72457EE31A91C0B800D128DA /* minus.png in Resources */,
+				72F5DA601A99F154003FF156 /* ETInnerCell.xib in Resources */,
 				72457EE41A91C0B800D128DA /* add.png in Resources */,
 				7204CB3B1A9587D7001CC274 /* PinkPin.png in Resources */,
+				72F5DA5A1A99F092003FF156 /* Down@2x.png in Resources */,
 				7204CB391A9587CE001CC274 /* YellowPin.png in Resources */,
 				72457EA51A8D9F2800D128DA /* LaunchScreen.xib in Resources */,
 				7204CB171A92E8F0001CC274 /* Sailboat.png in Resources */,
@@ -370,6 +429,7 @@
 				72457EA21A8D9F2800D128DA /* Images.xcassets in Resources */,
 				72457ECD1A908D0B00D128DA /* Image3.jpg in Resources */,
 				7204CB301A94783F001CC274 /* MapLocationDemo.plist in Resources */,
+				72F5DA591A99F092003FF156 /* Down.png in Resources */,
 				7204CB371A948DA0001CC274 /* RedPin.png in Resources */,
 				7204CB421A95B3BC001CC274 /* Cross@2x.png in Resources */,
 			);
@@ -389,6 +449,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72F5DA451A99EF23003FF156 /* ETTableView.m in Sources */,
 				7204CB1B1A9321CE001CC274 /* TableAnimationViewController.m in Sources */,
 				72457ED41A90927C00D128DA /* SlideImageViewController.m in Sources */,
 				72457E9D1A8D9F2800D128DA /* RootViewController.m in Sources */,
@@ -396,11 +457,14 @@
 				7204CB331A948BDF001CC274 /* CustomMapPin.m in Sources */,
 				72457E9A1A8D9F2800D128DA /* FTAppDelegate.m in Sources */,
 				72457E971A8D9F2800D128DA /* main.m in Sources */,
+				72F5DA4E1A99EF89003FF156 /* ETOuterCell.m in Sources */,
 				7204CB3E1A95B03C001CC274 /* WebViewController.m in Sources */,
 				7204CB281A9362BE001CC274 /* CameraViewController.m in Sources */,
 				7204CB2C1A9362F1001CC274 /* MapViewController.m in Sources */,
 				72457ED81A91B84D00D128DA /* ResizeableViewController.m in Sources */,
+				72F5DA5F1A99F154003FF156 /* ETInnerCell.m in Sources */,
 				72457EDB1A91B89B00D128DA /* ResizeableTableView.m in Sources */,
+				72F5DA421A99EC68003FF156 /* ExpandingTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

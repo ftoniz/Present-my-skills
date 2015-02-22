@@ -13,14 +13,19 @@
 
 @end
 
-@implementation RootViewController
+@implementation RootViewController{
+    NSMutableArray *menuData;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"Menu";
+    menuData = [NSMutableArray new];
     
     [self.tableView setDelegate:self];
     [self.tableView setDataSource:self];
+    
+    [self addObjectsToMenu];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -31,64 +36,31 @@
 
 #pragma mark -
 
+- (void)addObjectsToMenu{
+    [menuData addObject:@{ @"Title" : @"Slide Image" , @"StoryIdentifier" : @"SlideImageViewController" }];
+    [menuData addObject:@{ @"Title" : @"Resizeable Cell" , @"StoryIdentifier" : @"ResizeableViewController" }];
+    [menuData addObject:@{ @"Title" : @"Animation TableViewCell" , @"StoryIdentifier" : @"TableAnimationViewController" }];
+    [menuData addObject:@{ @"Title" : @"MapKit" , @"StoryIdentifier" : @"MapViewController" }];
+    [menuData addObject:@{ @"Title" : @"Expanding TableView" , @"StoryIdentifier" : @"ExpandingTableViewController" }];
+//    [menuData addObject:@{ @"" : @"" , @"" : @"" }];
+//    [menuData addObject:@{ @"" : @"" , @"" : @"" }];
+//    [menuData addObject:@{ @"" : @"" , @"" : @"" }];
+}
+
 #pragma mark TableView Delegate / Data Source
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    UIViewController *nextViewController;
-    switch (indexPath.row) {
-        case 0:
-            nextViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"SlideImageViewController"];
-            break;
-        case 1:
-            nextViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"ResizeableViewController"];
-            break;
-        case 2:
-            nextViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"TableAnimationViewController"];
-            break;
-        case 3:
-            nextViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"MapViewController"];
-            break;
-        case 4:
-            nextViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"CameraViewController"];
-            break;
-        default:
-            break;
-    }
-    
+    UIViewController *nextViewController = [self.storyboard instantiateViewControllerWithIdentifier:[[menuData objectAtIndex:indexPath.row] objectForKey:@"StoryIdentifier"]];
     [self.navigationController pushViewController:nextViewController animated:YES];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 4;
+    return [menuData count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    UITableViewCell *cell;
-    switch (indexPath.row) {
-        case 0:
-            cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
-            [cell.textLabel setText:@"Slide Image"];
-            return cell;
-        case 1:
-            cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
-            [cell.textLabel setText:@"Resizeable Cell"];
-            return cell;
-        case 2:
-            cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
-            [cell.textLabel setText:@"Animation TableViewCell"];
-            return cell;
-        case 3:
-            cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
-            [cell.textLabel setText:@"MapKit"];
-            return cell;
-        case 4:
-            cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
-            [cell.textLabel setText:@"Camera"];
-            return cell;
-        default:
-            break;
-    }
-    
-    return nil;
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];;
+    [cell.textLabel setText:[[menuData objectAtIndex:indexPath.row] objectForKey:@"Title"]];
+    return cell;
 }
 
 @end

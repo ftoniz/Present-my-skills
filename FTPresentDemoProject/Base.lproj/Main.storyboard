@@ -212,6 +212,40 @@
             </objects>
             <point key="canvasLocation" x="1981" y="397"/>
         </scene>
+        <!--Expanding Table View Controller-->
+        <scene sceneID="UuT-mP-wob">
+            <objects>
+                <viewController storyboardIdentifier="ExpandingTableViewController" automaticallyAdjustsScrollViewInsets="NO" id="Kmf-x5-5Tk" customClass="ExpandingTableViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aSe-LP-sCf"/>
+                        <viewControllerLayoutGuide type="bottom" id="1mv-LL-EBf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5Jt-hy-fC2">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="HmS-1k-7fR" customClass="ETTableView">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1mv-LL-EBf" firstAttribute="top" secondItem="HmS-1k-7fR" secondAttribute="bottom" id="1IY-Lj-Buy"/>
+                            <constraint firstAttribute="trailing" secondItem="HmS-1k-7fR" secondAttribute="trailing" id="3BU-SH-C4l"/>
+                            <constraint firstItem="HmS-1k-7fR" firstAttribute="top" secondItem="aSe-LP-sCf" secondAttribute="bottom" id="3vS-NT-hJy"/>
+                            <constraint firstItem="HmS-1k-7fR" firstAttribute="leading" secondItem="5Jt-hy-fC2" secondAttribute="leading" id="BrX-IE-JSQ"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="tableView" destination="HmS-1k-7fR" id="9xN-cu-Xpg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WPv-Li-9NY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2646" y="-283"/>
+        </scene>
         <!--Table Animation View Controller-->
         <scene sceneID="C4z-t4-Tmf">
             <objects>
