@@ -13,7 +13,9 @@
 @end
 
 @implementation ExpandingTableViewController{
-    NSMutableArray *data;
+    NSMutableArray *headerData;
+    NSMutableArray *innerData;
+    NSMutableArray *filterData;
 }
 
 - (void)viewDidLoad {
@@ -34,53 +36,59 @@
 #pragma mark -
 
 - (void)makeData{
-    data = [NSMutableArray new];
+    headerData = [NSMutableArray new];
+    innerData = [NSMutableArray new];
+    filterData = [NSMutableArray new];
     
-    [data addObject:[[ETOuter alloc] initWithTitle:@"First Outer Cell"]];
-    [data addObject:[[ETInner alloc] initWithTitle:@"First Inner Cell"]];
-    [data addObject:[[ETInner alloc] initWithTitle:@"Second Inner Cell"]];
-    [data addObject:[[ETInner alloc] initWithTitle:@"Third Inner Cell"]];
+    [headerData addObject:[[ETOuter alloc] initWithTitle:@"First Outer Cell"]];
+    [innerData addObject:@[[[ETInner alloc] initWithTitle:@"First Inner Cell"],[[ETInner alloc] initWithTitle:@"Second Inner Cell"],[[ETInner alloc] initWithTitle:@"Third Inner Cell"]]];
 
-    [data addObject:[[ETOuter alloc] initWithTitle:@"Second Outer Cell"]];
-    [data addObject:[[ETInner alloc] initWithTitle:@"First Inner Cell"]];
-    [data addObject:[[ETInner alloc] initWithTitle:@"Second Inner Cell"]];
-    [data addObject:[[ETInner alloc] initWithTitle:@"Third Inner Cell"]];
-    [data addObject:[[ETInner alloc] initWithTitle:@"Fourth Inner Cell"]];
-    [data addObject:[[ETInner alloc] initWithTitle:@"Fifth Inner Cell"]];
 
-    [data addObject:[[ETOuter alloc] initWithTitle:@"Third Outer Cell"]];
-    [data addObject:[[ETInner alloc] initWithTitle:@"First Inner Cell"]];
-    [data addObject:[[ETInner alloc] initWithTitle:@"Second Inner Cell"]];
-    [data addObject:[[ETInner alloc] initWithTitle:@"Third Inner Cell"]];
-    [data addObject:[[ETInner alloc] initWithTitle:@"Fourth Inner Cell"]];
-    [data addObject:[[ETInner alloc] initWithTitle:@"Fifth Inner Cell"]];
-    [data addObject:[[ETInner alloc] initWithTitle:@"Sixth Inner Cell"]];
-    [data addObject:[[ETInner alloc] initWithTitle:@"Seventh Inner Cell"]];
+    [headerData addObject:[[ETOuter alloc] initWithTitle:@"Second Outer Cell"]];
+    [innerData addObject:@[    [[ETInner alloc] initWithTitle:@"First Inner Cell"],
+                                [[ETInner alloc] initWithTitle:@"Second Inner Cell"],
+                                [[ETInner alloc] initWithTitle:@"Third Inner Cell"],
+                                [[ETInner alloc] initWithTitle:@"Fourth Inner Cell"],
+                                [[ETInner alloc] initWithTitle:@"Fifth Inner Cell"] ]];
 
-    [data addObject:[[ETOuter alloc] initWithTitle:@"Fourth Outer Cell"]];
-    [data addObject:[[ETInner alloc] initWithTitle:@"First Inner Cell"]];
-    [data addObject:[[ETInner alloc] initWithTitle:@"Second Inner Cell"]];
-    [data addObject:[[ETInner alloc] initWithTitle:@"Third Inner Cell"]];
-    [data addObject:[[ETInner alloc] initWithTitle:@"Fourth Inner Cell"]];
-    [data addObject:[[ETInner alloc] initWithTitle:@"Fifth Inner Cell"]];
-    [data addObject:[[ETInner alloc] initWithTitle:@"Sixth Inner Cell"]];
-    [data addObject:[[ETInner alloc] initWithTitle:@"Seventh Inner Cell"]];
-    [data addObject:[[ETInner alloc] initWithTitle:@"Eighth Inner Cell"]];
-    [data addObject:[[ETInner alloc] initWithTitle:@"Ninth Inner Cell"]];
 
-    [data addObject:[[ETOuter alloc] initWithTitle:@"Fifth Outer Cell"]];
-    [data addObject:[[ETInner alloc] initWithTitle:@"First Inner Cell"]];
-    [data addObject:[[ETInner alloc] initWithTitle:@"Second Inner Cell"]];
-    [data addObject:[[ETInner alloc] initWithTitle:@"Third Inner Cell"]];
-    [data addObject:[[ETInner alloc] initWithTitle:@"Fourth Inner Cell"]];
-    [data addObject:[[ETInner alloc] initWithTitle:@"Fifth Inner Cell"]];
-    [data addObject:[[ETInner alloc] initWithTitle:@"Sixth Inner Cell"]];
-    [data addObject:[[ETInner alloc] initWithTitle:@"Seventh Inner Cell"]];
-    [data addObject:[[ETInner alloc] initWithTitle:@"Eighth Inner Cell"]];
-    [data addObject:[[ETInner alloc] initWithTitle:@"Ninth Inner Cell"]];
-    [data addObject:[[ETInner alloc] initWithTitle:@"Tenth Inner Cell"]];
+    [headerData addObject:[[ETOuter alloc] initWithTitle:@"Third Outer Cell"]];
+    [innerData addObject:@[ [[ETInner alloc] initWithTitle:@"First Inner Cell"],
+                            [[ETInner alloc] initWithTitle:@"Second Inner Cell"],
+                            [[ETInner alloc] initWithTitle:@"Third Inner Cell"],
+                            [[ETInner alloc] initWithTitle:@"Fourth Inner Cell"],
+                            [[ETInner alloc] initWithTitle:@"Fifth Inner Cell"],
+                            [[ETInner alloc] initWithTitle:@"Sixth Inner Cell"],
+                            [[ETInner alloc] initWithTitle:@"Seventh Inner Cell"] ]];
+
+    [headerData addObject:[[ETOuter alloc] initWithTitle:@"Fourth Outer Cell"]];
+    [innerData addObject:@[ [[ETInner alloc] initWithTitle:@"First Inner Cell"],
+                            [[ETInner alloc] initWithTitle:@"Second Inner Cell"],
+                            [[ETInner alloc] initWithTitle:@"Third Inner Cell"],
+                            [[ETInner alloc] initWithTitle:@"Fourth Inner Cell"],
+                            [[ETInner alloc] initWithTitle:@"Fifth Inner Cell"],
+                            [[ETInner alloc] initWithTitle:@"Sixth Inner Cell"],
+                            [[ETInner alloc] initWithTitle:@"Seventh Inner Cell"] ,
+                            [[ETInner alloc] initWithTitle:@"Eighth Inner Cell"] ,
+                            [[ETInner alloc] initWithTitle:@"Ninth Inner Cell"] ]];
+
+    [headerData addObject:[[ETOuter alloc] initWithTitle:@"Fifth Outer Cell"]];
+    [innerData addObject:@[ [[ETInner alloc] initWithTitle:@"First Inner Cell"],
+                            [[ETInner alloc] initWithTitle:@"Second Inner Cell"],
+                            [[ETInner alloc] initWithTitle:@"Third Inner Cell"],
+                            [[ETInner alloc] initWithTitle:@"Fourth Inner Cell"],
+                            [[ETInner alloc] initWithTitle:@"Fifth Inner Cell"],
+                            [[ETInner alloc] initWithTitle:@"Sixth Inner Cell"],
+                            [[ETInner alloc] initWithTitle:@"Seventh Inner Cell"] ,
+                            [[ETInner alloc] initWithTitle:@"Eighth Inner Cell"] ,
+                            [[ETInner alloc] initWithTitle:@"Ninth Inner Cell"] ,
+                            [[ETInner alloc] initWithTitle:@"Tenth Inner Cell"] ]];
+
+    [filterData addObjectsFromArray:headerData];
 
 }
+
+
 
 #pragma mark TableView Delegate / Data Source 
 - (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath{
@@ -88,51 +96,50 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    id object = [data objectAtIndex:indexPath.row];
+    id object = [filterData objectAtIndex:indexPath.row];
+    
+    
     if ([object isKindOfClass:[ETOuter class]]) {
-        NSMutableArray *relaodIndexPaths = [NSMutableArray new];
+        NSUInteger headerIndex = [headerData indexOfObject:object];
+        NSMutableArray *reloadIndexPaths = [NSMutableArray new];
 
         [(ETOuter *)object setExpanded:![(ETOuter *)object expanded]];
         [self.tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
         
-        NSUInteger i = 1;
-        while (indexPath.row + i < [data count]) {
-            if ([[data objectAtIndex:indexPath.row + i] isKindOfClass:[ETOuter class]]) {
-                break;
-            }
-            else{
-                ETInner *innerObject = [data objectAtIndex:indexPath.row + i];
-                [innerObject setVisible:![innerObject visible]];
-                [relaodIndexPaths addObject:[NSIndexPath indexPathForRow:indexPath.row + i inSection:0]];
-            }
-            i++;
+        NSArray *innerObject = [innerData objectAtIndex:headerIndex];
+        
+        for (int i = 1; i <= [innerObject count]; i++) {
+            [reloadIndexPaths addObject:[NSIndexPath indexPathForRow:indexPath.row + i inSection:0]];
         }
-        [self.tableView reloadRowsAtIndexPaths:relaodIndexPaths withRowAnimation:UITableViewRowAnimationAutomatic];
+
+        if ([(ETOuter *)object expanded]) {
+            [filterData insertObjects:innerObject atIndexes:[NSIndexSet indexSetWithIndexesInRange:NSMakeRange(indexPath.row + 1, [innerObject count])]];
+            [self.tableView insertRowsAtIndexPaths:reloadIndexPaths withRowAnimation:UITableViewRowAnimationAutomatic];
+        }
+        else{
+            [filterData removeObjectsInArray:innerObject];
+            [self.tableView deleteRowsAtIndexPaths:reloadIndexPaths withRowAnimation:UITableViewRowAnimationAutomatic];
+        }
     }
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return [data count];
+    return [filterData count];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    id object = [data objectAtIndex:indexPath.row];
+    id object = [filterData objectAtIndex:indexPath.row];
     if ([object isKindOfClass:[ETOuter class]]) {
         return 44;
     }
     else if ([object isKindOfClass:[ETInner class]]){
-        if ([(ETInner *)object visible] ) {
-            return 24;
-        }
-        else{
-            return 0.0001f;
-        }
+        return 24;
     }
     return 44;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    id object = [data objectAtIndex:indexPath.row];
+    id object = [filterData objectAtIndex:indexPath.row];
     if ([object isKindOfClass:[ETOuter class]]) {
         ETOuterCell *cell = [self.tableView outerCellWithTitle:[object valueForKey:@"title"] stage:[(ETOuter *)object expanded] ? ETOuterStageExpanded : ETOuterStageContracted];
         return cell;
