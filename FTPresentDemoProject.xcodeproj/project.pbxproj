@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B39E8101AA760BD00BD51E7 /* FTAlertButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B39E80D1AA760BD00BD51E7 /* FTAlertButton.m */; };
+		6B39E8111AA760BD00BD51E7 /* FTAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B39E80F1AA760BD00BD51E7 /* FTAlertController.m */; };
+		6BF975251AA7200D00D242A6 /* RealmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BF975241AA7200D00D242A6 /* RealmViewController.m */; };
+		6BF975291AA721E000D242A6 /* RClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BF975281AA721E000D242A6 /* RClass.m */; };
+		6BF9752C1AA721F000D242A6 /* RScore.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BF9752B1AA721F000D242A6 /* RScore.m */; };
+		6BF975301AA7324D00D242A6 /* NewClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BF9752F1AA7324D00D242A6 /* NewClassViewController.m */; };
+		6BF975331AA73C4000D242A6 /* FTPortraitNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BF975321AA73C4000D242A6 /* FTPortraitNavigationController.m */; };
+		6BF975371AA741A600D242A6 /* Save@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BF975341AA741A600D242A6 /* Save@3x.png */; };
+		6BF975381AA741A600D242A6 /* Save@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BF975351AA741A600D242A6 /* Save@2x.png */; };
+		6BF975391AA741A600D242A6 /* Save.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BF975361AA741A600D242A6 /* Save.png */; };
+		6BF9753D1AA745A800D242A6 /* ScoreRealmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BF9753C1AA745A800D242A6 /* ScoreRealmViewController.m */; };
+		6BF975411AA7550100D242A6 /* AddScoreRealmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BF975401AA7550100D242A6 /* AddScoreRealmViewController.m */; };
 		7204CB171A92E8F0001CC274 /* Sailboat.png in Resources */ = {isa = PBXBuildFile; fileRef = 7204CB161A92E8F0001CC274 /* Sailboat.png */; };
 		7204CB1B1A9321CE001CC274 /* TableAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7204CB1A1A9321CE001CC274 /* TableAnimationViewController.m */; };
 		7204CB1E1A9322B8001CC274 /* Refresh@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7204CB1C1A9322B8001CC274 /* Refresh@2x.png */; };
@@ -54,6 +66,7 @@
 		72F5DA5B1A99F092003FF156 /* Down@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 72F5DA551A99F092003FF156 /* Down@3x.png */; };
 		72F5DA5F1A99F154003FF156 /* ETInnerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 72F5DA5D1A99F154003FF156 /* ETInnerCell.m */; };
 		72F5DA601A99F154003FF156 /* ETInnerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72F5DA5E1A99F154003FF156 /* ETInnerCell.xib */; };
+		8844176D7D9F393E0E771FF4 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A7962986605F0314EB507DEE /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +80,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F4BB1D916BA58C6B564AAED /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		6B39E80C1AA760BD00BD51E7 /* FTAlertButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTAlertButton.h; sourceTree = "<group>"; };
+		6B39E80D1AA760BD00BD51E7 /* FTAlertButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTAlertButton.m; sourceTree = "<group>"; };
+		6B39E80E1AA760BD00BD51E7 /* FTAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTAlertController.h; sourceTree = "<group>"; };
+		6B39E80F1AA760BD00BD51E7 /* FTAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTAlertController.m; sourceTree = "<group>"; };
+		6BF975231AA7200D00D242A6 /* RealmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RealmViewController.h; sourceTree = "<group>"; };
+		6BF975241AA7200D00D242A6 /* RealmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RealmViewController.m; sourceTree = "<group>"; };
+		6BF975271AA721E000D242A6 /* RClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RClass.h; sourceTree = "<group>"; };
+		6BF975281AA721E000D242A6 /* RClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RClass.m; sourceTree = "<group>"; };
+		6BF9752A1AA721F000D242A6 /* RScore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RScore.h; sourceTree = "<group>"; };
+		6BF9752B1AA721F000D242A6 /* RScore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RScore.m; sourceTree = "<group>"; };
+		6BF9752E1AA7324D00D242A6 /* NewClassViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewClassViewController.h; sourceTree = "<group>"; };
+		6BF9752F1AA7324D00D242A6 /* NewClassViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewClassViewController.m; sourceTree = "<group>"; };
+		6BF975311AA73C4000D242A6 /* FTPortraitNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTPortraitNavigationController.h; sourceTree = "<group>"; };
+		6BF975321AA73C4000D242A6 /* FTPortraitNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTPortraitNavigationController.m; sourceTree = "<group>"; };
+		6BF975341AA741A600D242A6 /* Save@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Save@3x.png"; sourceTree = "<group>"; };
+		6BF975351AA741A600D242A6 /* Save@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Save@2x.png"; sourceTree = "<group>"; };
+		6BF975361AA741A600D242A6 /* Save.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Save.png; sourceTree = "<group>"; };
+		6BF9753B1AA745A800D242A6 /* ScoreRealmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoreRealmViewController.h; sourceTree = "<group>"; };
+		6BF9753C1AA745A800D242A6 /* ScoreRealmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoreRealmViewController.m; sourceTree = "<group>"; };
+		6BF9753F1AA7550100D242A6 /* AddScoreRealmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddScoreRealmViewController.h; sourceTree = "<group>"; };
+		6BF975401AA7550100D242A6 /* AddScoreRealmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddScoreRealmViewController.m; sourceTree = "<group>"; };
 		7204CB161A92E8F0001CC274 /* Sailboat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sailboat.png; sourceTree = "<group>"; };
 		7204CB191A9321CE001CC274 /* TableAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableAnimationViewController.h; sourceTree = "<group>"; };
 		7204CB1A1A9321CE001CC274 /* TableAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableAnimationViewController.m; sourceTree = "<group>"; };
@@ -133,6 +168,8 @@
 		72F5DA5C1A99F154003FF156 /* ETInnerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETInnerCell.h; sourceTree = "<group>"; };
 		72F5DA5D1A99F154003FF156 /* ETInnerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETInnerCell.m; sourceTree = "<group>"; };
 		72F5DA5E1A99F154003FF156 /* ETInnerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ETInnerCell.xib; sourceTree = "<group>"; };
+		A7962986605F0314EB507DEE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDE1AEB528724E81E551CB7B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7204CB2E1A936333001CC274 /* MapKit.framework in Frameworks */,
+				8844176D7D9F393E0E771FF4 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,6 +192,68 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6B39E80B1AA760BD00BD51E7 /* FTAlertController */ = {
+			isa = PBXGroup;
+			children = (
+				6B39E80C1AA760BD00BD51E7 /* FTAlertButton.h */,
+				6B39E80D1AA760BD00BD51E7 /* FTAlertButton.m */,
+				6B39E80E1AA760BD00BD51E7 /* FTAlertController.h */,
+				6B39E80F1AA760BD00BD51E7 /* FTAlertController.m */,
+			);
+			path = FTAlertController;
+			sourceTree = "<group>";
+		};
+		6BF975221AA71FD700D242A6 /* Data W/ Realm */ = {
+			isa = PBXGroup;
+			children = (
+				6BF975261AA7201700D242A6 /* Data Object */,
+				6BF975231AA7200D00D242A6 /* RealmViewController.h */,
+				6BF975241AA7200D00D242A6 /* RealmViewController.m */,
+				6BF9753A1AA7459200D242A6 /* Score */,
+				6BF9753E1AA754EE00D242A6 /* AddScore */,
+				6BF9752D1AA7323B00D242A6 /* NewClass */,
+			);
+			name = "Data W/ Realm";
+			sourceTree = "<group>";
+		};
+		6BF975261AA7201700D242A6 /* Data Object */ = {
+			isa = PBXGroup;
+			children = (
+				6BF975271AA721E000D242A6 /* RClass.h */,
+				6BF975281AA721E000D242A6 /* RClass.m */,
+				6BF9752A1AA721F000D242A6 /* RScore.h */,
+				6BF9752B1AA721F000D242A6 /* RScore.m */,
+			);
+			name = "Data Object";
+			sourceTree = "<group>";
+		};
+		6BF9752D1AA7323B00D242A6 /* NewClass */ = {
+			isa = PBXGroup;
+			children = (
+				6BF9752E1AA7324D00D242A6 /* NewClassViewController.h */,
+				6BF9752F1AA7324D00D242A6 /* NewClassViewController.m */,
+			);
+			name = NewClass;
+			sourceTree = "<group>";
+		};
+		6BF9753A1AA7459200D242A6 /* Score */ = {
+			isa = PBXGroup;
+			children = (
+				6BF9753B1AA745A800D242A6 /* ScoreRealmViewController.h */,
+				6BF9753C1AA745A800D242A6 /* ScoreRealmViewController.m */,
+			);
+			name = Score;
+			sourceTree = "<group>";
+		};
+		6BF9753E1AA754EE00D242A6 /* AddScore */ = {
+			isa = PBXGroup;
+			children = (
+				6BF9753F1AA7550100D242A6 /* AddScoreRealmViewController.h */,
+				6BF975401AA7550100D242A6 /* AddScoreRealmViewController.m */,
+			);
+			name = AddScore;
+			sourceTree = "<group>";
+		};
 		7204CB181A932198001CC274 /* Table Animation Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -191,6 +291,8 @@
 				72457E931A8D9F2800D128DA /* FTPresentDemoProject */,
 				72457EAD1A8D9F2800D128DA /* FTPresentDemoProjectTests */,
 				72457E921A8D9F2800D128DA /* Products */,
+				A5ABB3082C01B065E992BE77 /* Pods */,
+				C8FD043155E69C359DCD14D2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -206,6 +308,9 @@
 		72457E931A8D9F2800D128DA /* FTPresentDemoProject */ = {
 			isa = PBXGroup;
 			children = (
+				6B39E80B1AA760BD00BD51E7 /* FTAlertController */,
+				6BF975311AA73C4000D242A6 /* FTPortraitNavigationController.h */,
+				6BF975321AA73C4000D242A6 /* FTPortraitNavigationController.m */,
 				72457E981A8D9F2800D128DA /* FTAppDelegate.h */,
 				72457E991A8D9F2800D128DA /* FTAppDelegate.m */,
 				72457E9B1A8D9F2800D128DA /* RootViewController.h */,
@@ -218,6 +323,7 @@
 				7204CB291A9362DE001CC274 /* MapKit */,
 				72F5DA3F1A99EC3F003FF156 /* Expanding Table */,
 				7204CB251A936265001CC274 /* Photo n Video */,
+				6BF975221AA71FD700D242A6 /* Data W/ Realm */,
 				72457E9E1A8D9F2800D128DA /* Main.storyboard */,
 				72457EA11A8D9F2800D128DA /* Images.xcassets */,
 				72457EA31A8D9F2800D128DA /* LaunchScreen.xib */,
@@ -256,6 +362,9 @@
 		72457ED01A908D1200D128DA /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				6BF975341AA741A600D242A6 /* Save@3x.png */,
+				6BF975351AA741A600D242A6 /* Save@2x.png */,
+				6BF975361AA741A600D242A6 /* Save.png */,
 				72F5DA501A99F092003FF156 /* Up.png */,
 				72F5DA521A99F092003FF156 /* Up@2x.png */,
 				72F5DA511A99F092003FF156 /* Up@3x.png */,
@@ -322,6 +431,23 @@
 			name = "Expanding Table";
 			sourceTree = "<group>";
 		};
+		A5ABB3082C01B065E992BE77 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DDE1AEB528724E81E551CB7B /* Pods.debug.xcconfig */,
+				1F4BB1D916BA58C6B564AAED /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C8FD043155E69C359DCD14D2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A7962986605F0314EB507DEE /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -329,9 +455,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 72457EB41A8D9F2800D128DA /* Build configuration list for PBXNativeTarget "FTPresentDemoProject" */;
 			buildPhases = (
+				94F8FCA3E63C4AD4B6D32044 /* Check Pods Manifest.lock */,
 				72457E8D1A8D9F2700D128DA /* Sources */,
 				72457E8E1A8D9F2700D128DA /* Frameworks */,
 				72457E8F1A8D9F2700D128DA /* Resources */,
+				ED106005F23EFC40F257773F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -371,7 +499,6 @@
 				TargetAttributes = {
 					72457E901A8D9F2700D128DA = {
 						CreatedOnToolsVersion = 6.1.1;
-						DevelopmentTeam = 6A69269S39;
 					};
 					72457EA91A8D9F2800D128DA = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -413,6 +540,7 @@
 				7204CB441A95B3BC001CC274 /* Cross@3x.png in Resources */,
 				7204CB351A948D97001CC274 /* BrownPin.png in Resources */,
 				72F5DA5B1A99F092003FF156 /* Down@3x.png in Resources */,
+				6BF975391AA741A600D242A6 /* Save.png in Resources */,
 				72457ECF1A908D0B00D128DA /* Image2.jpg in Resources */,
 				72F5DA561A99F092003FF156 /* Up.png in Resources */,
 				72457EE31A91C0B800D128DA /* minus.png in Resources */,
@@ -425,10 +553,12 @@
 				7204CB171A92E8F0001CC274 /* Sailboat.png in Resources */,
 				7204CB211A932303001CC274 /* Refresh@3x.png in Resources */,
 				72457EE01A91B8B800D128DA /* ResizeableTableCell.xib in Resources */,
+				6BF975371AA741A600D242A6 /* Save@3x.png in Resources */,
 				7204CB1F1A9322B8001CC274 /* Refresh.png in Resources */,
 				72457EA21A8D9F2800D128DA /* Images.xcassets in Resources */,
 				72457ECD1A908D0B00D128DA /* Image3.jpg in Resources */,
 				7204CB301A94783F001CC274 /* MapLocationDemo.plist in Resources */,
+				6BF975381AA741A600D242A6 /* Save@2x.png in Resources */,
 				72F5DA591A99F092003FF156 /* Down.png in Resources */,
 				7204CB371A948DA0001CC274 /* RedPin.png in Resources */,
 				7204CB421A95B3BC001CC274 /* Cross@2x.png in Resources */,
@@ -444,6 +574,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		94F8FCA3E63C4AD4B6D32044 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		ED106005F23EFC40F257773F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		72457E8D1A8D9F2700D128DA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -455,16 +618,25 @@
 				72457E9D1A8D9F2800D128DA /* RootViewController.m in Sources */,
 				72457EDF1A91B8B800D128DA /* ResizeableTableCell.m in Sources */,
 				7204CB331A948BDF001CC274 /* CustomMapPin.m in Sources */,
+				6BF975331AA73C4000D242A6 /* FTPortraitNavigationController.m in Sources */,
 				72457E9A1A8D9F2800D128DA /* FTAppDelegate.m in Sources */,
+				6BF9752C1AA721F000D242A6 /* RScore.m in Sources */,
 				72457E971A8D9F2800D128DA /* main.m in Sources */,
+				6BF975251AA7200D00D242A6 /* RealmViewController.m in Sources */,
 				72F5DA4E1A99EF89003FF156 /* ETOuterCell.m in Sources */,
+				6BF975411AA7550100D242A6 /* AddScoreRealmViewController.m in Sources */,
 				7204CB3E1A95B03C001CC274 /* WebViewController.m in Sources */,
 				7204CB281A9362BE001CC274 /* CameraViewController.m in Sources */,
+				6B39E8111AA760BD00BD51E7 /* FTAlertController.m in Sources */,
 				7204CB2C1A9362F1001CC274 /* MapViewController.m in Sources */,
+				6B39E8101AA760BD00BD51E7 /* FTAlertButton.m in Sources */,
+				6BF975301AA7324D00D242A6 /* NewClassViewController.m in Sources */,
 				72457ED81A91B84D00D128DA /* ResizeableViewController.m in Sources */,
+				6BF9753D1AA745A800D242A6 /* ScoreRealmViewController.m in Sources */,
 				72F5DA5F1A99F154003FF156 /* ETInnerCell.m in Sources */,
 				72457EDB1A91B89B00D128DA /* ResizeableTableView.m in Sources */,
 				72F5DA421A99EC68003FF156 /* ExpandingTableViewController.m in Sources */,
+				6BF975291AA721E000D242A6 /* RClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -584,9 +756,11 @@
 		};
 		72457EB51A8D9F2800D128DA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDE1AEB528724E81E551CB7B /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = FTPresentDemoProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -596,9 +770,11 @@
 		};
 		72457EB61A8D9F2800D128DA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F4BB1D916BA58C6B564AAED /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = FTPresentDemoProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -9,6 +9,7 @@
 #import "RootViewController.h"
 #import "SlideImageViewController.h"
 #import "ResizeableViewController.h"
+#import "RealmViewController.h"
 @interface RootViewController ()
 
 @end
@@ -42,7 +43,7 @@
     [menuData addObject:@{ @"Title" : @"Animation TableViewCell" , @"StoryIdentifier" : @"TableAnimationViewController" }];
     [menuData addObject:@{ @"Title" : @"MapKit" , @"StoryIdentifier" : @"MapViewController" }];
     [menuData addObject:@{ @"Title" : @"Expanding TableView" , @"StoryIdentifier" : @"ExpandingTableViewController" }];
-//    [menuData addObject:@{ @"" : @"" , @"" : @"" }];
+    [menuData addObject:@{ @"Title" : @"Realm Data" , @"StoryIdentifier" : @"RealmViewController" }];
 //    [menuData addObject:@{ @"" : @"" , @"" : @"" }];
 //    [menuData addObject:@{ @"" : @"" , @"" : @"" }];
 }
